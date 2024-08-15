@@ -1,0 +1,190 @@
+/* !Global Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+   --primary-color: #fff;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    gap: 70px;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+}
+
+/* *Utility Class */
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    /*webkit is not supported in firefox*/
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);  
+    box-shadow: 5px -5px 1px gray, 10px -10px 2px rgb(182, 182, 182),
+    15px -15px 5px rgba(108, 85, 85, 0.562);
+    cursor: pointer;
+}
+
+.card1 {
+    background: url(images/spider.jpg);
+    /* background-position: top; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card2 {
+    background: url(images/iron.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card3 {
+    background: url(images/captain.jpg);
+    /* background-position: top; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card4 {
+    background: url(images/thor.jpg);
+    /* background-position: top; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.card .content {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: rgb(136, 116, 99, 0.1);
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    transition: all 1s ease-in-out;
+}
+.card .content h4 {
+    letter-spacing: 1px;
+    font-size: 25px;
+    color:var(--primary-color) ;
+}
+.card .content p {
+    letter-spacing: 1px;
+   color: var(--primary-color);
+   padding-block: 10px;
+}
+
+.card .content .pra {
+    width: 100%;
+    color: var(--primary-color);
+    text-align: center;
+    padding-inline: 20px;
+}
+
+.card .content .icon {
+    width: 100%;
+    height: 20px;
+    margin-block: 10px;
+    /* border: 1px solid red; */
+    gap: 25px;
+
+}
+
+
+.card .content .icon a {
+    transition: all 1s ease-in-out;
+    transform: rotateY(0deg);
+}
+
+
+.card .content .icon a:hover {
+    transform: rotateY(180deg);
+}
+
+.card  .content:hover {
+    animation: content 1s linear forwards;
+}
+
+@keyframes content {
+    0% {
+        transform: rotateX(180deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+
+.card1 .content {
+    opacity: 1;
+}
+
+.card2 .content {
+    opacity: 1;
+}
+
+.card3 .content {
+    opacity: 1;
+}
+
+.card4 .content {
+    opacity: 1;
+}
+
+
+.card1 .content:hover {
+    opacity: 0;
+}
+
+.card2 .content:hover {
+    opacity: 0;
+}
+
+.card3 .content:hover {
+    opacity: 0;
+}
+
+.card4 .content:hover {
+    opacity: 0;
+}
+
+/*Media Query*/
+/* @media screen and (max-width: 1600px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        gap: 250px;
+        flex-wrap: wrap;
+        background-color: var(--primary-color);
+    }
+} */
+
+
+@media screen and (max-width: 1056px) {
+    body {
+        gap: 150px;
+    }
+}
+@media screen and (max-width: 655px) {
+    body {
+        height: 280vh;
+        gap: 150px;
+       
+    }
+}
+@media screen and (max-width: 576px) {
+    body {
+        gap: 60px;
+    }
+}
+
