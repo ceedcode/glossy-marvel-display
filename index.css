@@ -38,30 +38,6 @@ body {
     cursor: pointer;
 }
 
-.card1 {
-    background: url(images/spider.jpg);
-    /* background-position: top; */
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.card2 {
-    background: url(images/iron.jpg);
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.card3 {
-    background: url(images/captain.jpg);
-    /* background-position: top; */
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.card4 {
-    background: url(images/thor.jpg);
-    /* background-position: top; */
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 
 .card .content {
@@ -117,12 +93,41 @@ body {
 
 @keyframes content {
     0% {
-        transform: rotateX(180deg);
+        transform: rotateY(180deg);
     }
     100% {
-        transform: rotateX(360deg);
+        transform: rotateY(360deg);
     }
 }
+
+/* *Individual Styling*/
+
+.card1 {
+    background: url(images/spider.jpg);
+    /* background-position: top; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card2 {
+    background: url(images/iron.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card3 {
+    background: url(images/captain.jpg);
+    /* background-position: top; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card4 {
+    background: url(images/thor.jpg);
+    /* background-position: top; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 
 
 .card1 .content {
